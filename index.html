@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modas Beea Store</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --rosa-choque: #ff007f;
+      --gradient-bg: linear-gradient(145deg, #0f0c29, #302b63, #ff007f);
+    }
+    body {
+      font-family: 'Urbanist', sans-serif;
+      background: radial-gradient(circle at top left, #1e1e2f, #000);
+    }
+  </style>
+</head>
+<body class="text-white">
+  <!-- Top section -->
+  <header class="p-8 bg-gradient-to-r from-black via-purple-900 to-[var(--rosa-choque)] rounded-b-3xl shadow-xl">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
+      <div>
+        <h1 class="text-5xl font-extrabold">Modas Beea Store</h1>
+        <p class="text-lg mt-2">Cílios com estilo e personalidade ✨</p>
+      </div>
+      <a href="https://cal.com/beatriz-4mkrqs" target="_blank" class="mt-6 md:mt-0 px-6 py-3 bg-white text-black font-semibold rounded-full shadow-lg hover:bg-[var(--rosa-choque)] hover:text-white transition duration-300">Agendar Horário</a>
+    </div>
+  </header>
+
+  <!-- Serviços com cards -->
+  <section class="max-w-6xl mx-auto px-6 py-16">
+    <h2 class="text-4xl font-bold text-center mb-12 text-[var(--rosa-choque)]">Nossos Serviços</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-gray-900 p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+        <h3 class="text-xl font-bold">Volume Inglês 5D</h3>
+        <p class="text-[var(--rosa-choque)] font-semibold mt-2">R$ 130,00</p>
+      </div>
+      <div class="bg-gray-900 p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+        <h3 class="text-xl font-bold">Volume Brasileiro</h3>
+        <p class="text-[var(--rosa-choque)] font-semibold mt-2">R$ 120,00</p>
+      </div>
+      <div class="bg-gray-900 p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+        <h3 class="text-xl font-bold">Volume Egípcio 6D</h3>
+        <p class="text-[var(--rosa-choque)] font-semibold mt-2">R$ 140,00</p>
+      </div>
+      <div class="bg-gray-900 p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+        <h3 class="text-xl font-bold">Fox Eyes</h3>
+        <p class="text-[var(--rosa-choque)] font-semibold mt-2">R$ 170,00</p>
+      </div>
+      <div class="bg-gray-900 p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+        <h3 class="text-xl font-bold">Mega Egípcio Capping</h3>
+        <p class="text-[var(--rosa-choque)] font-semibold mt-2">R$ 190,00</p>
+      </div>
+      <div class="bg-gray-900 p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+        <h3 class="text-xl font-bold">Mega Brasileiro Capping</h3>
+        <p class="text-[var(--rosa-choque)] font-semibold mt-2">R$ 170,00</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-2xl shadow-lg col-span-full hover:scale-105 transition">
+        <h3 class="text-xl font-bold">Remoção</h3>
+        <p class="text-[var(--rosa-choque)] font-semibold mt-2">R$ 25,00</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeria de Fotos com efeito -->
+  <section class="max-w-6xl mx-auto px-6 py-16">
+    <h2 class="text-4xl font-bold text-center mb-12 text-[var(--rosa-choque)]">Veja Nossos Trabalhos</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div class="rounded-2xl overflow-hidden shadow-xl transform transition duration-500 hover:scale-105 group relative">
+        <img src="cilios3.jpg" alt="Cílios 1" class="w-full h-full object-cover group-hover:brightness-75 transition duration-500" />
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition bg-black/60 text-white font-semibold">Cílios lindos 💖</div>
+      </div>
+      <div class="rounded-2xl overflow-hidden shadow-xl transform transition duration-500 hover:scale-105 group relative">
+        <img src="cilios2.jpg" alt="Cílios 2" class="w-full h-full object-cover group-hover:brightness-75 transition duration-500" />
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition bg-black/60 text-white font-semibold">Olhar poderoso ✨</div>
+      </div>
+      <div class="rounded-2xl overflow-hidden shadow-xl transform transition duration-500 hover:scale-105 group relative">
+        <img src="cilios1.jpg" alt="Cílios 3" class="w-full h-full object-cover group-hover:brightness-75 transition duration-500" />
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition bg-black/60 text-white font-semibold">Antes e Depois 🔥</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="bg-black text-gray-400 text-center py-6 text-sm">
+    © 2025 Modas Beea Store • Todos os direitos reservados • Cílios com amor 💖
+  </footer>
+</body>
+</html>
